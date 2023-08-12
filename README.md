@@ -129,3 +129,7 @@ In an Artificial Neural Network (ANN), various types of layers can be used to pr
    - Depending on the problem, there are various specialized layers, such as attention layers used in transformer models for natural language processing, and more.
 
 These are just a few examples of the types of layers that can be used in ANNs. The choice of layers depends on the problem at hand and the characteristics of the data. ANN architectures often combine different layer types to effectively capture and process various patterns in the data.
+
+
+![Screenshot from 2023-08-12 14-23-25](https://github.com/chanakyavasantha/DeepLearning/assets/93817654/1fce38e7-0809-4a6f-b02e-f16f350ceed7)
+
