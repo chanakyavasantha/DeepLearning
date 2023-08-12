@@ -59,3 +59,33 @@ Key characteristics of deep learning:
 Popular types of deep learning architectures include Convolutional Neural Networks (CNNs) for image analysis, Recurrent Neural Networks (RNNs) for sequence data, and Transformers for natural language processing.
 
 It's important to note that while deep learning has achieved impressive results in various domains, it also requires careful tuning, training, and validation to ensure optimal performance and avoid overfitting (when the model performs well on the training data but poorly on new, unseen data).
+
+<hr>
+
+#### What is an ANN:
+An **Artificial Neural Network (ANN)** is a computational model inspired by the brain's structure. It consists of layers of interconnected nodes (neurons) and is used in machine learning for tasks like pattern recognition and decision-making. Neurons process inputs using weights and activation functions. Training adjusts weights to optimize performance. ANN has led to breakthroughs in various fields, like image recognition and language processing.
+
+#### Implement your first neural network using tensorflow's sequential API:
+```
+import tensorflow as tf
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
+
+# Create a Sequential model
+model = Sequential()
+
+# Add a Dense layer with 64 units and ReLU activation for the input layer
+model.add(Dense(units=64, activation='relu', input_dim=8))  # Adjust input_dim to match your data
+
+# Add a second Dense layer with 32 units and ReLU activation
+model.add(Dense(units=32, activation='relu'))
+
+# Add the output layer with 1 unit and sigmoid activation for binary classification
+model.add(Dense(units=1, activation='sigmoid'))
+
+# Compile the model
+model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+
+# Print the model summary
+model.summary()
+```
