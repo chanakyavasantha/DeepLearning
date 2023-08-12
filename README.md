@@ -133,3 +133,6 @@ These are just a few examples of the types of layers that can be used in ANNs. T
 
 ![Screenshot from 2023-08-12 14-23-25](https://github.com/chanakyavasantha/DeepLearning/assets/93817654/1fce38e7-0809-4a6f-b02e-f16f350ceed7)
 
+![Screenshot from 2023-08-12 14-29-44](https://github.com/chanakyavasantha/DeepLearning/assets/93817654/95f56d9d-0dc7-4f11-bf4a-758950ed7314)
+
+
