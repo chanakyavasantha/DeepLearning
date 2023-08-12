@@ -130,9 +130,53 @@ In an Artificial Neural Network (ANN), various types of layers can be used to pr
 
 These are just a few examples of the types of layers that can be used in ANNs. The choice of layers depends on the problem at hand and the characteristics of the data. ANN architectures often combine different layer types to effectively capture and process various patterns in the data.
 
+<hr>
 
+#### Activation Functions in ANN:
 ![Screenshot from 2023-08-12 14-23-25](https://github.com/chanakyavasantha/DeepLearning/assets/93817654/1fce38e7-0809-4a6f-b02e-f16f350ceed7)
 
 ![Screenshot from 2023-08-12 14-29-44](https://github.com/chanakyavasantha/DeepLearning/assets/93817654/95f56d9d-0dc7-4f11-bf4a-758950ed7314)
+
+Activation functions are a crucial component in artificial neural networks and deep learning models. They introduce non-linearity to the network, enabling it to learn and approximate complex functions. Different activation functions have specific properties that make them suitable for various use cases. Here are some common activation functions and their use cases:
+
+1. **Sigmoid Activation (Logistic Function):**
+   - Use Case: Historically used in binary classification problems, where the output needs to be between 0 and 1. Also used in the hidden layers of shallow networks.
+   - Note: Can suffer from vanishing gradient problem, limiting its effectiveness in deep networks.
+
+2. **Hyperbolic Tangent (Tanh) Activation:**
+   - Use Case: Similar to sigmoid but with a range between -1 and 1. Suitable for situations where data is centered around zero and requires normalization.
+   - Note: Still susceptible to vanishing gradient issues.
+
+3. **Rectified Linear Unit (ReLU) Activation:**
+   - Use Case: Extremely popular due to its simplicity and effectiveness. Widely used in deep neural networks for hidden layers. Helps mitigate vanishing gradient issues.
+   - Note: Can suffer from "dying ReLU" problem where some units become inactive and do not update during training.
+
+4. **Leaky ReLU Activation:**
+   - Use Case: Variation of ReLU to address the "dying ReLU" problem. Allows a small gradient when the unit is not active, promoting better training.
+   - Note: Prevents some of the issues with ReLU but may still suffer from vanishing gradient for very negative inputs.
+
+5. **Parametric ReLU (PReLU) Activation:**
+   - Use Case: Extension of Leaky ReLU where the slope of the negative side is learned during training. Can help with convergence and performance.
+   - Note: Adds an additional parameter to the network, which might increase complexity.
+
+6. **Exponential Linear Unit (ELU) Activation:**
+   - Use Case: Addresses the limitations of ReLU and its variations by reducing the "dying ReLU" problem and enabling negative values without gradient issues.
+   - Note: May require additional computational resources compared to simpler activations.
+
+7. **Scaled Exponential Linear Unit (SELU) Activation:**
+   - Use Case: Designed for self-normalizing networks, it maintains mean and variance of activations, potentially leading to faster convergence and improved performance.
+   - Note: Requires specific weight initialization and may not work optimally in all scenarios.
+
+8. **Softmax Activation:**
+   - Use Case: Typically used in the output layer of multi-class classification problems. Converts raw scores into probability distributions, aiding in class selection.
+   - Note: Assumes mutually exclusive classes and is not suitable for regression tasks.
+
+9. **Linear Activation (Identity Function):**
+   - Use Case: Used in regression problems where the output needs to be directly proportional to the input. Also used in the output layer of neural networks for regression tasks.
+
+10. **Swish Activation:**
+    - Use Case: A newer activation function that combines the benefits of ReLU and Sigmoid, potentially offering better training and generalization.
+
+The choice of activation function depends on factors such as the problem type, network architecture, potential vanishing/exploding gradient issues, and empirical performance on the specific task. Experimentation and fine-tuning are often required to find the most suitable activation for a given model.
 
 
