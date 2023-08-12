@@ -89,3 +89,43 @@ model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy']
 # Print the model summary
 model.summary()
 ```
+
+In an Artificial Neural Network (ANN), various types of layers can be used to process and transform data. Each type of layer serves a specific purpose in capturing different types of patterns and relationships in the data. Here are some common types of layers found in ANNs:
+
+1. **Dense (Fully Connected) Layer:**
+   - The dense layer is the basic building block of an ANN. Each neuron in this layer is connected to every neuron in the previous layer, and each connection has an associated weight.
+   - Dense layers are often used for capturing complex patterns and relationships in the data.
+
+2. **Convolutional Layer (Convolutional Neural Networks - CNNs):**
+   - Convolutional layers are primarily used for processing grid-like data, such as images. They apply filters (kernels) to detect local patterns and features in the input data.
+   - CNNs are highly effective for tasks like image recognition and computer vision.
+
+3. **Pooling Layer (CNNs):**
+   - Pooling layers reduce the spatial dimensions of the data by down-sampling, helping to decrease computation and control overfitting.
+   - Common pooling operations include max pooling and average pooling.
+
+4. **Recurrent Layer (Recurrent Neural Networks - RNNs):**
+   - Recurrent layers, such as Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) layers, are designed to handle sequential data by maintaining an internal state that captures temporal dependencies.
+   - RNNs are well-suited for tasks involving sequences, such as natural language processing and time series prediction.
+
+5. **Embedding Layer:**
+   - Embedding layers map categorical variables (like words or categories) to continuous vector representations, allowing the network to learn meaningful relationships between them.
+   - Often used in natural language processing for word embeddings.
+
+6. **Normalization Layer (Batch Normalization):**
+   - Normalization layers standardize the inputs to a layer, which can accelerate training and improve convergence.
+   - Batch normalization is a common form of normalization used to stabilize training.
+
+7. **Dropout Layer:**
+   - Dropout layers randomly deactivate a fraction of neurons during training, helping to prevent overfitting by improving the network's generalization ability.
+
+8. **Flatten Layer:**
+   - The flatten layer reshapes higher-dimensional data into a 1D vector, often used to transition from convolutional layers to fully connected layers.
+
+9. **Output Layer:**
+   - The output layer produces the final prediction or output of the network, depending on the task. The architecture of this layer varies, such as using sigmoid activation for binary classification or softmax for multi-class classification.
+
+10. **Other Specialized Layers:**
+   - Depending on the problem, there are various specialized layers, such as attention layers used in transformer models for natural language processing, and more.
+
+These are just a few examples of the types of layers that can be used in ANNs. The choice of layers depends on the problem at hand and the characteristics of the data. ANN architectures often combine different layer types to effectively capture and process various patterns in the data.
